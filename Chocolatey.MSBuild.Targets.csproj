@@ -45,9 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Build\Pack.targets">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Build\Chocolatey.MSBuild.Targets.targets" />
     <None Include="Chocolatey.MSBuild.Targets.nuspec" />
     <None Include="packages.config" />
     <None Include="Tools\install.ps1" />
