@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Chocolatey.MSBuild.Targets</id>
-    <version>0.0.1.1</version>
+    <version>0.0.2.0</version>
     <title>Chocolatey.MSBuild.Targets</title>
     <authors>Nate-Wilkins</authors>
     <owners>Nate-Wilkins</owners>
