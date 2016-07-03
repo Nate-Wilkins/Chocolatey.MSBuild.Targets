@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Chocolatey.MSBuild.Targets</id>
+    <version>0.0.1.0</version>
+    <title>Chocolatey.MSBuild.Targets</title>
+    <authors>Nate-Wilkins</authors>
+    <owners>Nate-Wilkins</owners>
+    <projectUrl>https://github.com/Nate-Wilkins/Chocolatey.MSBuild.Targets</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Chocolatey MSBuild Targets</description>
+    <releaseNotes />
+    <copyright>Copyright 2016</copyright>
+    <language>en-US</language>
+    <tags>chocolatey pack choco nuget</tags>
+  </metadata>
+  <files>
+    <file src="Build\**\*" target="build" />
+    <file src="Tools\**\*" target="tools" />
+    <file src="README.txt" target="" />
+  </files>
+</package>

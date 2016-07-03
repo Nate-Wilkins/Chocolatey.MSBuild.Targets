@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="Chocolatey_Pack" AfterTargets="Build" Condition="'$(Configuration)'=='Release'">
+    <PropertyGroup>
+      <ChocolateyNuSpecFile>$(MSBuildProjectDirectory)\$(AssemblyName).nuspec</ChocolateyNuSpecFile>
+    </PropertyGroup>
+    
+    <Message Importance="high" Text="Chocolatey Pack: $(ChocolateyNuSpecFile)" />
+    
+    <Exec WorkingDirectory="$(OutputPath)" ContinueOnError="false" Command="choco pack &quot;$(ChocolateyNuSpecFile)&quot;" IgnoreExitCode="false">
+      <Output TaskParameter="ExitCode" PropertyName="ExitCode" />
+    </Exec>
+  </Target>
+</Project>
